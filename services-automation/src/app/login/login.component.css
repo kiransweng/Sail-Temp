@@ -1,0 +1,57 @@
+#login {
+  position: absolute;
+  bottom: 400px;
+  right: 90px;
+}
+#username {
+    position: absolute;
+    bottom: 380px;
+    right: 90px;
+}
+
+#password {
+    position: absolute;
+    bottom: 340px;
+    right: 90px;
+}
+
+img {
+  width: 1260px;
+  height: 360px;
+}
+
+#usernamelabel {
+    position: absolute;
+    bottom: 380px;
+    right: 280px;
+}
+
+#passwordlabel {
+    position: absolute;
+    bottom: 340px;
+    right: 280px;
+}
+
+#authenticate {
+    position: absolute;
+    bottom: 300px;
+    right: 250px;
+}
+
+#projectlabel {
+    position: absolute;
+    bottom: 240px;
+    right: 280px;
+}
+
+#projectdropdown {
+    position: absolute;
+    bottom: 240px;
+    right: 200px;
+}
+
+#login {
+    position: absolute;
+    bottom: 200px;
+    right: 250px;
+}
