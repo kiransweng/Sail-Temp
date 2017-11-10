@@ -1,0 +1,31 @@
+<img src="assets/images/login.jpg" alt="login_image_missing">
+
+<label id="usernamelabel" for="username">Username:</label>
+<input type="text" id="username" [(ngModel)]="username" autofocus required />
+
+
+<br>
+<br>
+
+
+<label id="passwordlabel" for="password">Password:</label>
+<input type="password" id="password" [(ngModel)]="password" autofocus required/>
+
+
+<br>
+<br>
+
+
+<button id="authenticate" (click)="authenticateUser()"><b>Authenticate</b></button>
+
+
+<div *ngIf="isValidLogin">
+    <label for="projectdropdown" id="projectlabel">Project:</label>
+    <select id="projectdropdown">
+      <option value="Safeway">Safeway</option>
+      <option value="Belron">Belron</option>
+      <option value="Chrysler">Chrysler</option>
+    </select>
+
+    <button id="login" (click)="loginUser()"><b>Login</b></button>
+</div>
