@@ -1,4 +1,4 @@
-<img src="assets/images/login.jpg" alt="login_image_missing">
+<!--<img src="assets/images/login.jpg" alt="login_image_missing">
 
 <label id="usernamelabel" for="username">Username:</label>
 <input type="text" id="username" [(ngModel)]="username" autofocus required />
@@ -28,4 +28,26 @@
     </select>
 
     <button id="login" (click)="loginUser()"><b>Login</b></button>
+</div>
+-->
+
+<div *ngIf="selectedStepValue!=undefined && isSelectedStepMatches('getMethod')">
+  <label>Enter Endpoint URL:</label>
+  <input type="text" id="captureUrl" name="captureUrl" />
+  <br>
+  <br>
+</div>
+
+<div *ngIf="selectedStepValue!=undefined && isSelectedStepMatches('verifyStatusCode')">
+  <label>Expected Status Code:</label>
+  <input type="text" id="statusCode" name="statusCode" />
+  <br>
+  <br>
+</div>
+
+<div id="addstep">
+  <label>Add Step for </label>
+  <select id="stepdropdown" [(ngModel)]="selectedStepValue">
+      <option *ngFor="let step of steps">{{step.value}}</option>
+  </select>
 </div>
